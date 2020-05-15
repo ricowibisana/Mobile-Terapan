@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Floating">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Floating Button"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"/>
+
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editbutton"
+        android:layout_gravity="end|bottom"
+        android:layout_marginBottom="180dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginEnd="2dp"
+        app:fabSize="mini"
+        android:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        android:backgroundTint="@color/colorAccent"
+        android:src="@drawable/ic_edit_black_24dp"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/savebutton"
+        android:layout_gravity="end|bottom"
+        android:layout_marginBottom="130dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginEnd="2dp"
+        app:fabSize="mini"
+        android:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        android:backgroundTint="@color/colorAccent"
+        android:src="@drawable/ic_save_black_24dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/deletebutton"
+        android:layout_gravity="end|bottom"
+        android:layout_marginBottom="80dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginEnd="2dp"
+        app:fabSize="mini"
+        android:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        android:backgroundTint="@color/colorAccent"
+        android:src="@drawable/ic_delete_black_24dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addbutton"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/colorPrimary"
+        app:fabSize="normal"
+        android:elevation="6sp"
+        app:pressedTranslationZ="12dp"
+        android:src="@drawable/ic_add_white_24dp"/>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
